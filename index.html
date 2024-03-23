@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +12,83 @@
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/style.css">
-    
-    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <!-- Site title -->
     <title>Thrivesimple - Cloud Bookkeeping for Busy Businesses. Simple & Secure.</title>
 </head>
 <body>
     <!-- Navigation -->
-    <header class="">
+    <header class="container is-fullhd">
+
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/" aria-label="home link">
+                    <img src="src/icons/logo.svg" width="65px" height="65px" alt="logo">
+                    <span>Thrivesimple</span>
+                </a>                  
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+          
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                         <a class="navbar-item" href="/" aria-label="Home">Home</a>
+                         <a class="navbar-item" href="#services" aria-label="Services">Services</a>
+                         <a class="navbar-item" href="#offer" aria-label="Pricing">Pricing</a>
+                         <a class="navbar-item" href="#blog" aria-label="Blog">Blog</a>                       
+                    </div>
+                </div>
+
+            </div>
+          </nav>
 
     </header>
 
     <!-- Main -->
     <main class="">
         <!-- LANDING -->
-        
+        <section class="hero">
+            <div class="hero-body">
+                <div class="columns container">
+                    <!-- Left column -->
+                    <div class="column">
+                        <h1 class="title">
+                            Cloud Bookkeeping 
+                            <br>for Busy Businesses. 
+                            <br>Simple & Secure.
+                        </h1>
+                        <br>
+                        <h2 class="subtitle">
+                            Take control of your finances 
+                            <br>with our easy-to-use cloud bookkeeping.
+                        </h2>
+                        <br>
+                        <a href="#about">LEARN MORE</a>
+                    </div>
+                    <!-- Right column -->
+                    <div class="column">
+                        <img src="src/img/hero.svg" width="60%" alt="hero image">
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
         <!-- WHAT WE DO -->
+        
 
         <!-- OFFER -->
 
