@@ -1,32 +1,54 @@
 :root {
-    --font-family-primary: "DM Serif Display", serif;
+    --font-family-primary: "Poppins", sans-serif;
     --font-family-secondary: "Poppins", sans-serif;
     --font-size-primary: 3rem;
+    --color-primary: #00bfff;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-      /* Update CSS variables */
-      --color-primary: #00bfff;
-      --color-secondary: #C3ACD0;
-      --color-dark: #2d2046;
-      --color-light: #FFFBF5;
-    }
+/* Selection */
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: var(--color-primary);
+}
+  
+  ::selection {
+    color: white;
+    background: var(--color-primary);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-      /* Update CSS variables */
-      --color-primary: #00bfff;
-      --color-secondary: #C3ACD0;
-      --color-dark: #2d2046;
-      --color-light: #FFFBF5;
+/* Animation */
 
-    }
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
+
+/* animated fadeIn */
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+
+/* -------------- */
+/*    Page CSS    */
+/* -------------- */
 
 html {
     scroll-behavior: smooth;
+    /* background-color: var(--background-color) !important; */
 }  
 
 body {
@@ -46,19 +68,32 @@ a {
 /* Navbar */
 .navbar {
     padding: 2rem 0;
-}
 
-.navbar-brand {
+    .navbar-brand {
 
-    .navbar-item {
-        --bulma-navbar-item-hover-background-l-delta: none;
+        .navbar-item {
+            background: none;
+        }
+    
+        a {
+            span {
+                color: var(--color-primary);
+                font-weight: 600;
+                font-size: 1.3rem;
+            }
+        }
+    
+        a:focus {
+            background: none;
+        }
     }
 
-    a {
-        span {
-            color: var(--color-primary);
-            font-weight: 600;
-            font-size: 1.3rem;
+}
+
+.navbar-end {
+    .navbar-item {
+        a:hover {
+            background-color: #00bfff1e;
         }
     }
 }
@@ -68,6 +103,11 @@ a {
 .hero-body {
     h1 {
         font-size: 4rem;
+    }
+
+    h2 {
+        font-weight: 300;
+        margin: 3rem 0rem 4rem 0 !important;
     }
 
     .columns {
@@ -94,14 +134,19 @@ a {
     }
 }
 
-h2 {
-    font-weight: 300;
-}
+
 
 
 
 /* Media Query */
 @media screen and (max-width: 1220px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 2rem 0 0 0;
+    }
+
+    /* Hero section */
     .hero-body {
         h1 {
             font-size: 2rem;
@@ -109,7 +154,7 @@ h2 {
 
         .columns {
             .column:nth-child(2) {
-                margin-top: 2rem;
+                margin-top: 4rem;
             }
         }
     }
