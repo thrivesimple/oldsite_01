@@ -329,6 +329,13 @@ a {
 
 }
 
+/* Clients section */
+#clients {
+    .clients-list li {
+        margin-left: 4.5rem !important;
+    }
+}
+
 
 /* Media Query */
 
@@ -375,6 +382,14 @@ a {
     .img-group img {
         width: 3.5rem !important;
     }
+
+    /* Clients section */
+    #clients {
+    .clients-list li {
+        margin-left: 1rem !important;
+    }
+}
+
 }
 
 
