@@ -108,6 +108,7 @@ a {
     h2 {
         font-weight: 300;
         margin: 3rem 0rem 4rem 0 !important;
+        line-height: 2rem;
     }
 
     .columns {
@@ -135,6 +136,36 @@ a {
 }
 
 
+/* WHAT WE DO Section */
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    ul {
+
+        li {
+            line-height: 3rem;
+            display: flex;
+        }
+
+        /* Replace list-style */
+        li::before {
+            content: url("../icons/checkmark.svg");
+            transform: scale(1.5);
+            margin-right: 1.5rem;
+        }
+    }
+}
 
 
 
