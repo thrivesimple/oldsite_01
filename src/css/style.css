@@ -369,12 +369,12 @@ a {
     
             /* Replace list-style */
             li::before {
-                transform: scale(1);
+                transform: scale(1.1);
             }
         }
     
         .benefits-list li::before {
-            transform: scale(1);
+            transform: scale(1.1);
         }
     }
 
