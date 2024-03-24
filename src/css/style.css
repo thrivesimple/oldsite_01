@@ -72,6 +72,16 @@
     margin: 0 !important;    
 }
 
+.grid,
+.cell {
+    margin-top: 0 !important;
+}
+
+.card-image,
+.content {
+    margin-top: 0 !important;
+}
+
 
 /* -------------- */
 /*    Page CSS    */
@@ -276,6 +286,46 @@ a {
     .column:nth-child(2) {
         /* padding: 8% !important; */
     }
+}
+
+
+/* Blog section */
+#blog {
+    margin-bottom: 5rem !important;
+
+    .flex {
+        margin: 0 !important;
+    }
+    
+    div.grid {
+        flex-direction: row;
+        /* margin-top: 4rem !important; */
+
+        .cell {
+            
+            border-radius: 15px;
+            margin-bottom: 0;
+
+            .image {
+                img {
+                    margin-bottom: 0;
+                }
+            }
+        
+            .content {
+
+                background-color: white;
+                border-radius: 0 0 15px 15px;
+                padding: 2rem;
+
+                p {
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+
 }
 
 
