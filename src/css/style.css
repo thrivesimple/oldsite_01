@@ -142,8 +142,20 @@ a {
 .navbar-end {
     .navbar-item {
         a:hover {
-            background-color: #00bfff1e;
+            background-color: #00bfff;
         }
+    }
+
+    button {
+        background-color: var(--color-primary);
+        color: white;
+        padding: 1rem 2rem;
+        margin-left: 2rem;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        background-color: #00bfff;
     }
 }
 
