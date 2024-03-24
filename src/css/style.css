@@ -2,7 +2,7 @@
     --font-family-primary: "Poppins", sans-serif;
     --font-family-secondary: "Poppins", sans-serif;
     --font-size-primary: 3rem;
-    --color-primary: #00bfff;
+    --color-primary: #0098E6;
 }
 
 
@@ -10,8 +10,9 @@
 [data-theme=light] {
   /* Update CSS variables */
 
-    .middle-wrapper {
-        background-color: #fafafa;
+    .middle-wrapper,
+    .content {
+        background-color: #fafafa !important;
     }
 
 }
@@ -21,8 +22,9 @@
 [data-theme=dark] {
   /* Update CSS variables */
 
-    .middle-wrapper {
-        background-color: #191b20;
+    .middle-wrapper,
+    .content {
+        background-color: #191b20 !important;
     }
 
 }
@@ -205,7 +207,7 @@ a {
     }
 
     img {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
 
     p {
@@ -238,7 +240,7 @@ a {
 }
 
 #services.section {
-    padding: 0;
+    padding: 4rem 0 0 0;
 }
 
 
@@ -269,7 +271,7 @@ a {
 }
 
 .benefits-wrapper {
-    padding: 10rem 0;
+    padding: 6rem 0;
 
     .column {
         padding: 0 2rem !important;
@@ -314,7 +316,6 @@ a {
         
             .content {
 
-                background-color: white;
                 border-radius: 0 0 15px 15px;
                 padding: 2rem;
 
