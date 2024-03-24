@@ -142,7 +142,7 @@ a {
 .navbar-end {
     .navbar-item {
         a:hover {
-            background-color: #00bfff;
+            background-color: #00bfff41;
         }
     }
 
@@ -190,7 +190,7 @@ a {
             }
 
             a:hover {
-                background-color: #00bfffb2;
+                background-color: #00bfff;
             }
         }
     }
