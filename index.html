@@ -66,9 +66,9 @@
         <!-- LANDING -->
         <section class="hero is-fullhd">
             <div class="hero-body container">
-                <div class="columns">
+                <div class="grid">
                     <!-- Left column -->
-                    <div class="column">
+                    <div class="cell">
                         <h1 class="title">
                             Cloud Bookkeeping <br> for Busy Businesses. 
                             <br>Simple & Secure.
@@ -82,7 +82,7 @@
                         <a class="cta-btn" href="#about">LEARN MORE</a>
                     </div>
                     <!-- Right column -->
-                    <div class="column">
+                    <div class="cell">
                         <img src="src/img/hero.svg" width="60%" height="60%" alt="hero image">
                     </div>
                 </div>
@@ -93,26 +93,17 @@
 
         <!-- WHAT WE DO -->
         <section id="about" class="section">
-            <div class="section-wrapper container">
+            <div class="section-wrapper container flex">
                 <h2 class="title">WHAT WE DO</h2>
 
                 <img src="src/icons/calculator.svg" width="55px" height="55px" alt="">
 
-                <p class="subtitle">
+                <p>
                     Feeling Drowned in Paperwork? Get Your Time Back with Cloud Bookkeeping.
-                </p>
-
-                <p class="subtitle">
-                    We use <b>QuickBooks Online</b> to keep your books clean and organized, accessible from anywhere.
-                </p>
-                
-                <p class="subtitle">
-                    Our team of experienced bookkeepers will handle your day-to-day transactions.
-                </p>
-
-                <p class="subtitle">
-                    Focus on what you do best, while we handle the books.
-                </p>
+                    <br>We use <b>QuickBooks Online</b> to keep your books clean and organized, accessible from anywhere.
+                    <br>Our team of experienced bookkeepers will handle your day-to-day transactions.
+                    <br>Focus on what you do best, while we handle the books.
+                </p>    
 
                 <div class="flex img-group">
                     <img src="/src/icons/verifieddoc.svg" alt="cloud image">
@@ -127,25 +118,32 @@
 
         <!-- SERVICES -->
         <section id="services" class="section">
-            <div class="section-wrapper container">
-                <h2 class="title">Here's what we offer</h2>
-                <ul class="p-5">
-                    <li>Bank reconciliations</li>
-                    <li>Expense categorization</li>
-                    <li>Accounts payable & receivable management</li>
-                    <li>Financial reporting (profit & loss, balance sheet)</li>
-                    <li>Tax prep assistance (partner with a CPA)</li>
-                </ul>
+            <div class="section-wrapper">
+                <div class="grid container">
+                    <div class="cell">
+                        <h2 class="title">Here's what we offer</h2>
+                        <ul class="subtitle">
+                            <li>Bank reconciliations</li>
+                            <li>Expense categorization</li>
+                            <li>Accounts payable & receivable management</li>
+                            <li>Financial reporting (profit & loss, balance sheet)</li>
+                            <li>Tax prep assistance (partner with a CPA)</li>
+                        </ul>        
+                    </div>
+                    <div class="cell">
+                        <img src="./src/img/bookkeeping.svg" alt="">
+                    </div>
+                </div>
             </div>
 
             <div class="section-wrapper middle-wrapper">
 
-                <div class="columns container">
-                    <div class="column">
+                <div class="grid container">
+                    <div class="cell">
                         <img class="middle-img" src="/src/img/pexels-linkedin-sales-navigator-1251841.jpg" alt="relaxed workday">
                     </div>
-                    <div class="column">
-                        <p class="subtitle msg">
+                    <div class="cell">
+                        <p class="subtitle">
                             Imagine having your finances <b>organized</b>, accessible from <b>anywhere</b>, and freeing up valuable time to focus on <b>growing your business</b>. 
                             <br>That's the power of cloud bookkeeping.
                         </p>        
@@ -154,21 +152,21 @@
 
             </div>
 
-            <div class="section-wrapper benefits-wrapper">
+            <div class="section-wrapper">
 
-                <div class="columns container">
-                    <div class="column">
+                <div class="grid container">
+                    <div class="cell">
                         <h2 class="title">Benefits of Working With Us</h2>
                         <p class="subtitle">
                             <b>Stop wasting time</b> on tedious bookkeeping tasks and:
                         </p>
-                        <ul class="benefits-list">
+                        <ul>
                             <li>Gain real-time financial visibility to make data-driven decisions.</li>
                             <li>Save money by streamlining your accounting processes.</li>
                             <li>Reduce stress and gain peace of mind knowing your books are in order.</li>
                         </ul>        
                     </div>
-                    <div class="column">
+                    <div class="cell">
                         <img src="./src/img/benefits.svg" alt="">
                     </div>
                 </div>
@@ -178,13 +176,11 @@
         <!-- BLOG -->
         <section id="blog" class="section">
 
-            <div class="section-wrapper container">
+            <div class="section-wrapper container flex">
                 <h2 class="title">BLOG</h2>
-                <div class="flex">
-                    <img src="./src/icons/dots.svg" width="50px" alt="">
-                    <img src="./src/icons/blog.svg" width="50px" alt="">
-                    <img src="./src/icons/dots.svg" width="50px" alt="">    
-                </div>
+
+                <img src="./src/icons/blog.svg" width="50px" alt="">
+
                 <div class="grid container">
 
                     <!-- Card 1 -->
@@ -241,13 +237,13 @@
         <section id="clients" class="section">
             <div class="section-wrapper">
 
-                <div class="columns container">
+                <div class="grid container">
 
-                    <div class="column">
+                    <div class="cell">
                         <img src="./src/img/clients.svg" alt="clients image">
                     </div>
 
-                    <div class="column">
+                    <div class="cell">
                         <h2 class="title">WHO WE WORK WITH</h2>
                         <p class="subtitle">
                             We'd love to help businesses like yours:
@@ -268,11 +264,11 @@
 
         <!-- PRICING -->
         <section id="pricing" class="section">
-            <div class="section-wrapper">
+            <div class="section-wrapper flex">
                 <h1 class="title">PRICING</h1>
                 <img src="./src/icons/pricing.svg" width="50px" alt="Pricing image">
                 
-                <div class="grid is-gap-4 container">
+                <div class="grid container">
 
                     <!-- Card 1 -->
                     <div class="cell card">
