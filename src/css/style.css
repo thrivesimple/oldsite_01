@@ -365,7 +365,7 @@ a {
                 }
                 
                 ul {
-                    margin: 0 auto 4rem auto;
+                    margin: 0 auto;
 
                     li {
                         text-align: left;
@@ -388,6 +388,8 @@ a {
             font-weight: 500;
             padding: 1rem 2rem;
             border-radius: 10px;
+            display: inline-block;
+            margin: 2rem 0 !important;
         }
 
         a:hover {
