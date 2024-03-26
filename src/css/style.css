@@ -89,19 +89,6 @@
     padding: 3rem;
 }
 
-/* CTA Buttons */
-.cta-btn {
-    background-color: var(--color-primary);
-    color: white !important;
-    font-size: 500 !important;
-    padding: 1rem 2rem !important;
-    border-radius: 10px;
-}
-
-.cta-btn:hover {
-    background-color: #00bfff;
-}
-
 
 /* -------------- */
 /*    Page CSS    */
@@ -123,6 +110,22 @@ a {
     text-decoration: none;
     color: var(--color-primary) !important;
 }
+
+
+/* CTA Buttons */
+.cta-btn {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    font-size: 500 !important;
+    padding: 1rem 2rem !important;
+    border-radius: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #00bfff !important;
+    color: white !important;
+}
+
 
 /* Logo */
 .logo {
@@ -162,12 +165,15 @@ a {
 
             a:hover {
                 background-color: #00bfff41;
-                color: var(--color-primary) !important;
             }
         }
     
         .cta-btn {
             margin-left: 2rem;
+        }
+
+        .cta-btn:last-child:hover {
+            color: white !important;
         }
     }
 
